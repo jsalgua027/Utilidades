@@ -4,6 +4,7 @@
  */
 package com.mycompany.utilidades;
 
+import java.util.InputMismatchException;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -29,52 +30,65 @@ public class Utilidades {
                 num = teclado.nextInt();
                 repetir = false;
 
-            } catch (NumberFormatException nfe) {
+            } catch( InputMismatchException ime) {
                 System.out.println("No has introducido un numero entero");
-
+                //limpio buffer
+                teclado.nextLine();
             }
 
         } while (repetir);
 
         return num;
     }
-    
+
     //pedir un numero entre un rango bucle hasta que este en el rango
-    
-    public static int leerNumeroRango(){
-    numero=0;
-
-   return numero;
-}
-    
-    
-    
-    
-    
-
-    
-    // numero entero dentro de un rango 
-    
-    public static boolean numeroDentroRango(int num, int min, int max){
-    boolean rango = true;
-    int numero= leerEnteroSinErrores();
+    public static int leerNumeroRango(int num, int min, int max) {
+          int  numero=0;
+          boolean bucle= true;
+        do {
+           
+            num = leerEnteroSinErrores();
+            if (num>= min&& num<=max){
+            num=numero;
+            bucle=false;
+            }else{
+                System.out.println("El numero esta fuera de rango");
+            bucle=true;
+            }
             
-        if (numero>=min && numero <= max){
+
+        } while (bucle);
+
+        return numero;
+    }
+
+    // numero entero dentro de un rango 
+    public static boolean numeroDentroRango(int num, int min, int max) {
+        boolean rango = true;
+        int numero = leerEnteroSinErrores();
+
+        if (numero >= min && numero <= max) {
             System.out.println(" El numero esta dentro del rango");
-        
-        }else {
+
+        } else {
             System.out.println("El numero esta fuera de rango");
-            rango=false;
+            rango = false;
         }
+
+        return rango;
+    }
     
+    // numero aleatoiro dentro de un rango
     
+    public static int aleatorioDentroRango(int min, int max){
+    int numeroGenerado;
     
+    numeroGenerado=aleatorio.nextInt(max-min+1)+min;
     
-    return rango;
+    return  numeroGenerado;
+    
     }
     
     
-    
-    
-    
+
 }

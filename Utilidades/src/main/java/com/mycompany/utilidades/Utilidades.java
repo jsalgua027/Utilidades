@@ -14,27 +14,7 @@ import java.util.Scanner;
  */
 public class Utilidades {
 
-    private static Scanner  teclado= new Scanner(System.in);
-    
-    private static Random aleatorio = new Random();
-    
-    
-    // leer enteros sin errores 
-    
-    public static int leerEnteroSinErrores(){
-        int num=0;
-        
-        try {
-            System.out.println("Introduce el numero entero");
-            
-            
-        } catch (Exception e) {
-        }
-        
-        
-    
-    
-    }
+ 
     
     
     

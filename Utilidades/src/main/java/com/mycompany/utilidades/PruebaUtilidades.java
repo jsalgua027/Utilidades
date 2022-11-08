@@ -14,11 +14,18 @@ public class PruebaUtilidades {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-   //     Utilidades.leerNumeroRango(5, 4, 10);
-        System.out.println("********************************************************");
-      //  Utilidades.leerEnteroSinErrores();
-        System.out.println("******************************************************");
-        System.out.println(Utilidades.aleatorioDentroRango(10, 15));
+//   //     Utilidades.leerNumeroRango(5, 4, 10);
+//        System.out.println("********************************************************");
+//      //  Utilidades.leerEnteroSinErrores();
+//        System.out.println("******************************************************");
+//        System.out.println(Utilidades.aleatorioDentroRango(10, 15));
+        
+    //    int pruebaEntero=Utilidades.leerNumeroEnteroSinErroresJOptionPane();
+        
+        char[] prueba={'a', 'b', 'c', 'd', 'f', '1','5','7','@','$'};
+        String pruebaChar=Utilidades.generadorSecuencia(prueba, 4);
+        System.out.println(pruebaChar);
+        
         
     }
     

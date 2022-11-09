@@ -119,7 +119,7 @@ public class Utilidades {
       
       
     
-     //solicitud de numeros dentro de un RANFO**************************** 
+     //solicitud de numeros dentro de un RANGO**************************** 
       
       //pedir un numero entre un rango bucle hasta que este en el rango
     public static int leerNumeroRango(int num, int min, int max) {

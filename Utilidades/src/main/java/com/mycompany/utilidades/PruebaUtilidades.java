@@ -22,11 +22,11 @@ public class PruebaUtilidades {
         
     //    int pruebaEntero=Utilidades.leerNumeroEnteroSinErroresJOptionPane();
         
-        char[] prueba={'a', 'b', 'c', 'd', 'f', '1','5','7','@','$'};
-        String pruebaChar=Utilidades.generadorSecuencia(prueba, 4);
-        System.out.println(pruebaChar);
+//        char[] prueba={'a', 'b', 'c', 'd', 'f', '1','5','7','@','$'};
+//        String pruebaChar=Utilidades.generadorSecuencia(prueba, 4);
+//        System.out.println(pruebaChar);
         
-        
+        double pruebaDecimal= Utilidades.leerNumeroDecimalesSinErroresJOptionPane();
     }
     
 }

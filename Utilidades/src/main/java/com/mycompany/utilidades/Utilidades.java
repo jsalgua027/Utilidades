@@ -177,12 +177,12 @@ public class Utilidades {
     public static String  numerosAleatoiosDandoCantidadDigitos(int numeroDigitos){
      String  aleatorio ="";
     
-            aleatorio=RandomStringUtils.randomAlphanumeric(numeroDigitos);
+            aleatorio=RandomStringUtils.randomNumeric(numeroDigitos);
     
     return aleatorio;
     }
     
-     // introduzco el número de digitos aleatorios que quiero sacar (saca números y caracteres) ejemplo password
+     // introduzco el número de digitos aleatorios que quiero sacar (saca números y caracteres) ejemplo password.
     
      public static String  numerosYCaracteresAleatoiosDandoCantidadDigitos(int numeroDigitos){
      String  aleatorio ="";
